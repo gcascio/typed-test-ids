@@ -4,7 +4,7 @@ import { test, expect } from '@playwright/test';
 test('has heading', async ({ page }) => {
   await page.goto('/');
 
-  const heading = page.getByTestId(e2e.home_heading['data-testid'])
+  const heading = page.getByTestId(e2e.home_heading.id)
 
   await expect(heading).toBeVisible();
 });
